@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>채소 가격 조회</title>
+</head>
+<body>
+<h2>채소 가격 조회</h2>
+<h3>분류 선택 후 검색하고자 하는 채소의 이름을 입력해주세요.</h3>
+	<form action="/search">
+		<select name="category">
+			<option value="fruit">과일</option>
+			<option value="vegetable">채소</option>
+		</select>
+		<input type="text" id="keyword" name="keyword" >
+		<input type="submit" value="조회">
+	</form>
+	<h3 th:text="${result}">"Wait"</h3>
+</body>
+</html>
